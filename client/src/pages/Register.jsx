@@ -35,7 +35,7 @@ const Register = () => {
               <TbSocial />
             </div>
             <span className='text-2xl text-[#065ad8] ' font-semibold>
-              ShareFun
+              Connectify
             </span>
           </div>
 
@@ -166,12 +166,12 @@ const Register = () => {
               <span className='text-xs font-medium'>Share</span>
             </div>
 
-            <div className='absolute flex items-center gap-1 bg-white left-10 top-6 py-2 px-5 rounded-full'>
+            <div className='absolute flex items-center gap-1 bg-white left-9 top-6 py-2 px-5 rounded-full'>
               <ImConnection />
               <span className='text-xs font-medium'>Connect</span>
             </div>
 
-            <div className='absolute flex items-center gap-1 bg-white left-12 bottom-6 py-2 px-5 rounded-full'>
+            <div className='absolute flex items-center gap-1 bg-white left-9 bottom-6 py-2 px-5 rounded-full'>
               <AiOutlineInteraction />
               <span className='text-xs font-medium'>Interact</span>
             </div>
@@ -179,7 +179,7 @@ const Register = () => {
 
           <div className='mt-16 text-center'>
             <p className='text-white text-base'>
-              Connect with friedns & have share for fun
+              Connect with friends & have share for fun
             </p>
             <span className='text-sm text-white/80'>
               Share memories with friends and the world.

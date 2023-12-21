@@ -102,6 +102,16 @@ const Login = () => {
                     />
                 }
                 </form>
+
+                <p className='text-ascent-2 text-sm text-center'>
+                    Don't have an account?
+                    <Link
+                    to='/register'
+                    className='text-[#065ad8] font-semibold ml-2 cursor-pointer'
+                    >
+                        Create Account
+                    </Link>
+                </p>
             </div>
 
             {/*RIGHT*/}
