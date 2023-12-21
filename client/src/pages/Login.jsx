@@ -19,6 +19,9 @@ const Login = () => {
         mode: "onChange",
       });
 
+      const onSubmit = async(data)=>{
+
+      }
       const [errMsg, setErrMsg] = useState("");
       const [isSubmitting,setIsSubmitting] = useState(false);
       const dispatch = useDispatch();
