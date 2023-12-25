@@ -1,6 +1,6 @@
 import{ React , useState } from 'react'
 import { useSelector } from 'react-redux'
-import {TopBar , ProfileCard ,FriendsCard , CustomButton, Loading}  from '../components';
+import {TopBar , ProfileCard ,FriendsCard , CustomButton, Loading, PostCard}  from '../components';
 import { useForm } from "react-hook-form";
 import {TextInput} from "../components";
 import { NoProfile } from '../assets';
@@ -133,7 +133,7 @@ const Home = () => {
                         </div>
                     </div>
                 </form>
-                {/* {loading ? (
+                {loading ? (
                 <Loading />
                 ) : posts?.length > 0 ? (
                 posts?.map((post) => (
@@ -149,7 +149,7 @@ const Home = () => {
                 <div className='flex w-full h-full items-center justify-center'>
                     <p className='text-lg text-ascent-2'>No Post Available</p>
                 </div>
-                )} */}
+                )}
             </div>
             {/* RIGHT == FRIENDS  */}
             <div className='hidden w-1/4 h-full lg:flex flex-col gap-8 overflow-y-auto'>
