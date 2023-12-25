@@ -204,8 +204,8 @@ export const user = {
       _id: "64df43714a4c0d47b5369fef",
       userId: {
         _id: "64df3c064180b81adfe41d4b",
-        firstName: "Code",
-        lastName: "Wave",
+        firstName: "Gagandeep",
+        lastName: "Bhardwaj",
         profileUrl:
           "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874454/samples/people/boy-snow-hoodie.jpg",
       },
@@ -270,8 +270,8 @@ export const user = {
       _id: "64df3ef86c2bd953c7b43193",
       userId: {
         _id: "64df3c064180b81adfe41d4b",
-        firstName: "Code",
-        lastName: "Wave",
+        firstName: "Gagandeep",
+        lastName: "Bhardwaj",
         profileUrl:
           "https://res.cloudinary.com/djs3wu5bg/image/upload/v1683874454/samples/people/boy-snow-hoodie.jpg",
       },
