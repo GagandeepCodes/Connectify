@@ -1,6 +1,6 @@
 import{ React , useState } from 'react'
 import { useSelector } from 'react-redux'
-import {TopBar , ProfileCard ,FriendsCard , CustomButton, Loading, PostCard}  from '../components';
+import {TopBar , ProfileCard ,FriendsCard , CustomButton, Loading, PostCard, EditProfile}  from '../components';
 import { useForm } from "react-hook-form";
 import {TextInput} from "../components";
 import { NoProfile } from '../assets';
@@ -36,7 +36,7 @@ const Home = () => {
                 <FriendsCard friends = {user?.friends}/>
             </div>
             {/* CENTER == POSTS  */}
-            <div className='flex-1 h-full bg-primary px-4 flex flex-col gap-6 overflow-y-auto rounded-lg'>
+            <div className='flex-1 h-full  px-4 flex flex-col gap-6 overflow-y-auto rounded-lg'>
                 <form
                     onSubmit={handleSubmit(handlePostSubmit)}
                     className='bg-primary px-4 rounded-lg'
@@ -246,6 +246,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        {edit && <EditProfile />}
     </div>
   )
 }
