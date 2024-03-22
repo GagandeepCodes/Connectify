@@ -6,6 +6,8 @@ import bodyParser from "body-parser";
 import dbConnection from "./dbConfig/index.js";
 //securty packges
 import helmet from "helmet";
+import errorMiddleware from "./middleware/errorMiddleware.js";
+import router from "./routes/index.js";
 dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 8800;
@@ -19,7 +21,9 @@ app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true }));
 
 app.use(morgan("dev"));
-
+app.use(router);
+//error middleware
+app.use(errorMiddleware);
 app.listen(PORT, ()=>{
     console.log(`Server is running on port : ${PORT}`)
 })
