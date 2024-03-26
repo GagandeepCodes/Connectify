@@ -8,8 +8,13 @@ import dbConnection from "./dbConfig/index.js";
 import helmet from "helmet";
 import errorMiddleware from "./middleware/errorMiddleware.js";
 import router from "./routes/index.js";
+import path from "path";
 dotenv.config();
 const app = express();
+
+const __dirname = path.resolve(path.dirname(""));
+app.use(express.static(path.join(__dirname, "views/build")));
+
 const PORT = process.env.PORT || 8800;
 dbConnection();
 
