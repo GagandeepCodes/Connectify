@@ -6,4 +6,5 @@ import postRoute from "./postRoutes.js";
 const router = express.Router();
 router.use(`/auth`, authRoute); //This goes like  - /auth/register or login
 router.use(`/users` , userRoute);
+router.use(`/posts`, postRoute);
 export default router;
