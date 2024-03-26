@@ -1,6 +1,6 @@
 import express from "express";
 import path from "path";
-import { acceptRequest, friendRequest, getFriendRequest, getUser, updateUser, verifyEmail } from "../controllers/userController.js";
+import { acceptRequest, friendRequest, getFriendRequest, getUser, profileViews, suggestedFriends, updateUser, verifyEmail } from "../controllers/userController.js";
 import { resetPasswordLink } from "../utils/sendEmail.js";
 import { resetPassword } from "../controllers/userController.js";
 import { requestPasswordReset } from "../controllers/userController.js";
@@ -27,6 +27,12 @@ router.post("/get-friend-request", userAuth, getFriendRequest);
 
 // accept / deny friend request
 router.post("/accept-request", userAuth, acceptRequest);
+
+// view profile
+router.post("/profile-view", userAuth, profileViews);
+
+//suggested friends
+router.post("/suggested-friends", userAuth, suggestedFriends);
 
 router.get("/verified" , (req,res) => {
     res.sendFile(path.join(__dirname, "./views/build", "index.html"));
