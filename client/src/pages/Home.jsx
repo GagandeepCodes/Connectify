@@ -11,6 +11,14 @@ import { friends } from '../assets/data';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
+    const handlePostSubmit = async(data) => {};
+    const [errMsg, setErrMsg] = useState("");
+    const [file, setFile] = useState(null);
+    const [posting, setPosting] = useState(false);
+    const [loading, setLoading] = useState(false);
+    const [friendRequest, setFriendRequest] = useState(requests);
+    const [suggestedFriends, setSuggestedFriends] = useState(suggest);
+    
     const {user , edit} = useSelector(
         (state) => state.user
     );
@@ -19,13 +27,6 @@ const Home = () => {
         handleSubmit,
         formState: { errors },
       } = useForm();
-    const handlePostSubmit = async(data) => {};
-    const [errMsg, setErrMsg] = useState("");
-    const [file, setFile] = useState(null);
-    const [posting, setPosting] = useState(false);
-    const [loading, setLoading] = useState(false);
-    const [friendRequest, setFriendRequest] = useState(requests);
-    const [suggestedFriends, setSuggestedFriends] = useState(suggest);
   return (
     <div className='home w-full px-0 lg:px-10 pb-20 2xl:px-40 bg-bgColor lg:rounded-lg h-screen overflow-hidden'>
         <TopBar/>

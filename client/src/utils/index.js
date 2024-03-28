@@ -136,3 +136,17 @@ export const sendFriendRequest = async (token,id) => {
         console.log(error);
     }
 }
+
+export const viewUserProfile = async (token,id) => {
+    try {
+        const res = await apiRequest({
+            url : "/users/profile-view",
+            token : token,
+            method : "POST",
+            data : { id },
+        });
+        return ;
+    } catch (error) {
+        console.log(error);
+    }
+}
