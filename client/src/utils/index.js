@@ -73,7 +73,7 @@ export const likePost = async({uri , token}) => {
         const res = await apiRequest({
             url : uri,
             token : token,
-            method : "POST"
+            method : "POST",
         });
 
         return res;
