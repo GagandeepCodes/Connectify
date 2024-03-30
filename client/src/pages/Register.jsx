@@ -55,10 +55,10 @@ const Register = () => {
         {/* LEFT */}
         <div className='w-full lg:w-1/2 h-full p-10 2xl:px-20 flex flex-col justify-center '>
           <div className='w-full flex gap-2 items-center mb-6'>
-            <div className='p-2 bg-[#065ad8] rounded text-white'>
+            <div className='p-2 bg-[#5356ff] rounded text-white'>
               <TbSocial />
             </div>
-            <span className='text-2xl text-[#065ad8] font-semibold '>
+            <span className='text-2xl text-[#5356ff] font-semibold '>
               Connectify
             </span>
           </div>
@@ -170,7 +170,7 @@ const Register = () => {
             Already has an account?{" "}
             <Link
               to='/login'
-              className='text-[#065ad8] font-semibold ml-2 cursor-pointer'
+              className='text-[#5356ff] font-semibold ml-2 cursor-pointer'
             >
               Login
             </Link>

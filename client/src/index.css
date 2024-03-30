@@ -59,13 +59,13 @@ z-index: 49;
 
   50% {
     transform: scale(1.2);
-    background-color: #4b79e4;
+    background-color: #5356ff;
     box-shadow: 0 0 0 10px rgba(178, 212, 252, 0);
   }
 
   100% {
     transform: scale(0.8);
-    background-color: #2584f8;
+    background-color: #5356ff;
     box-shadow: 0 0 0 0 rgba(178, 212, 252, 0.7);
   }
 }
@@ -77,7 +77,7 @@ z-index: 49;
     --color-secondary:255 255 255;
     --color-ascent1: 0 0 0;
     --color-ascent2: 89 91 100;
-    --color-blue: 6 90 216;
+    --color-blue: 83 86 255;
     --color-white: 255 255 255;
 
   }
@@ -88,7 +88,7 @@ z-index: 49;
     --color-secondary: 47 45 48;
     --color-ascent1: 255 255 255;
     --color-ascent2: 164 161 162;
-    --color-blue: 6 90 216;
+    --color-blue: 83 86 255;
     /* //16 176 255; */
     --color-white: 255 255 255;
   }

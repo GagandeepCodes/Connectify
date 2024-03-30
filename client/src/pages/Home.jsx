@@ -253,7 +253,7 @@ const Home = () => {
                             <CustomButton
                             type='submit'
                             title='Post'
-                            containerStyles='bg-[#0444a4] text-white py-1 px-6 rounded-full font-semibold text-sm'
+                            containerStyles='bg-[#5356ff] text-white py-1 px-6 rounded-full font-semibold text-sm'
                             />
                         )}
                         </div>
